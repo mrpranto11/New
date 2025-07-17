@@ -2,30 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Oh No!</title>
+  <title>Wait a Minute!</title>
   <style>
     body {
       background-color: #ffebee;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 40px;
+      margin: 0;
     }
     h1 {
-      color: #c62828;
-      font-size: 36px;
+      color: #d32f2f;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
-    img {
-      max-width: 100%;
+
+h2 {
+      color: #d32f2f;
+      font-size: 29px;
+      margin-bottom: 20px;
+}
+    .gif-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .gif-container img {
+      max-width: 90%;
+      max-height: 70vh;
       height: auto;
+      object-fit: contain;
       border-radius: 15px;
-      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .button-group {
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .yes {
+      background-color: #4caf50;
+      color: white;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.8;0
     }
   </style>
 </head>
 <body>
 
-  <h1>Oh no! That hurts 💔</h1>
-  <img src="Images/page2.gif" alt="No GIF">
+  <h1>Ek baar soch lo... 💭</h1>
+ <h2>Do you love ❤️ Me ?</h2>
+  
+
+  <div class="gif-container">
+    <img src="Images/page2.gif" alt="No GIF">
+  </div>
+
+  <div class="button-group">
+    <button class="btn yes" onclick="window.location.href='yes.html'">Yes</button>
+    <button class="btn no" onclick="window.location.href='final.html'">No</button>
+  </div>
 
 </body>
 </html>
